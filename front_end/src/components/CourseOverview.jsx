@@ -2,55 +2,78 @@ import React from 'react'
 
 const CourseOverview = (props) => {
   return (
-    <div className="container">
-      <div className="overview">
-        <h2 className="overview__title">Overview</h2> 
-        <h3 className="overview__objectives">Objectives:</h3>
-        <p className="overview__description">
+    <div className="module">
+      <div className="module__container">
+        <h2 className="module__title">Course Overview</h2> 
+        <h3 className="module__objectives">Course Objectives:</h3>
+        <p className="module__text">
           By the end of this course, you will have a solid understanding of: 
         </p>
-        <h4>Syntactically Awesome Style Sheets (SASS):</h4>
-        <ul className="overview__list">
-          <li className="overview__list--item">What is SASS</li> 
-          <li className="overview__list--item">How to modularize and make a component-based CSS structure</li> 
-          <li className="overview__list--item">How to use utility classes to DRY up our CSS</li> 
-          <li className="overview__list--item">How SASS uses folder structure, partials, imports, and caching</li> 
-          <li className="overview__list--item">How to create variables, mixins, and functions in SASS</li> 
-          <li className="overview__list--item">How to use SASS decorators</li> 
-          <li className="overview__list--item">What are SASS data types and interpolation</li> 
-          <li className="overview__list--item">How to use the SASS interactive shell</li> 
-          <li className="overview__list--item">How SASS nesting and parent selectors work</li> 
-          <li className="overview__list--item">How to use SASS inheritance with the Extend decorator</li> 
-          <li className="overview__list--item">How to create reusable media-query functions</li> 
-          <li className="overview__list--item">How to use scripting in your dev workflow</li> 
+        <h4 class="module__sub-title">Syntactically Awesome Style Sheets (SASS):</h4>
+        <ul className="module__list">
+          <li className="module__list--item">What is SASS</li> 
+          <li className="module__list--item">How to modularize and make a component-based CSS structure</li> 
+          <li className="module__list--item">How to use utility classes to DRY up our CSS</li> 
+          <li className="module__list--item">How SASS uses folder structure, partials, imports, and caching</li> 
+          <li className="module__list--item">How to create variables, mixins, and functions in SASS</li> 
+          <li className="module__list--item">How to use SASS decorators</li> 
+          <li className="module__list--item">What are SASS data types and interpolation</li> 
+          <li className="module__list--item">How to use the SASS interactive shell</li> 
+          <li className="module__list--item">How SASS nesting and parent selectors work</li> 
+          <li className="module__list--item">How to use SASS inheritance with the Extend decorator</li> 
+          <li className="module__list--item">How to create reusable media-query functions</li> 
+          <li className="module__list--item">How to use scripting in your dev workflow</li> 
         </ul>
-        <h4>Block Element Modifiers (BEM):</h4>
-        <ul className="overview__list">
-          <li className="overview__list--item">What is BEM and why is it important</li> 
-          <li className="overview__list--item">How to define Blocks, Elements and Modifiers</li> 
-          <li className="overview__list--item">How BEM and SASS overcome specificity conflicts</li> 
+        <h4 class="module__sub-title">Block Element Modifiers (BEM):</h4>
+        <ul className="module__list">
+          <li className="module__list--item">What is BEM and why is it important</li> 
+          <li className="module__list--item">How to define Blocks, Elements and Modifiers</li> 
+          <li className="module__list--item">How BEM and SASS overcome specificity conflicts</li> 
 
         </ul>
-        <h4>CSS, CSS3, and Animations:</h4>
-        <ul className="overview__list">
-          <li className="overview__list--item">Why global resets are a sign of poorly designed CSS</li> 
-          <li className="overview__list--item">How to convert pixels to rem units quickly and easily</li> 
-          <li className="overview__list--item">How the use of 'rem' instead of 'px' speeeds up responsive layout workload</li> 
-          <li className="overview__list--item">What the difference between a pseudo-selector and a pseudo-element is</li> 
-          <li className="overview__list--item">Deep dive of all major pseudo-selectors</li> 
-          <li className="overview__list--item">How to create pseudo-elements</li> 
-          <li className="overview__list--item">Useful CSS debugging tricks</li> 
-          <li className="overview__list--item">How to create your own float-grid</li> 
-          <li className="overview__list--item">How to use Flexbox</li> 
-          <li className="overview__list--item">How to use CSS Grid</li> 
-          <li className="overview__list--item">How to style inputs and use HTML5-regex with CSS-validation</li> 
-          <li className="overview__list--item">How to use Clip Path to create skewed angles on elements</li> 
-          <li className="overview__list--item">What is a "checkbox-hack" and how can we use it to provide responsive user-experiences</li> 
-          <li className="overview__list--item">How to use transitions to create basic animations</li> 
-          <li className="overview__list--item">How to use CSS keyframes to make more dynamic animations</li> 
-          <li className="overview__list--item">How to use animation <em>responsibly</em></li> 
+        <h4 class="module__sub-title">CSS, CSS3, and Animations:</h4>
+        <ul className="module__list">
+          <li className="module__list--item">Why global resets are a sign of poorly designed CSS</li> 
+          <li className="module__list--item">How to convert pixels to rem units quickly and easily</li> 
+          <li className="module__list--item">How the use of 'rem' instead of 'px' speeeds up responsive layout workload</li> 
+          <li className="module__list--item">What the difference between a pseudo-selector and a pseudo-element is</li> 
+          <li className="module__list--item">Deep dive of all major pseudo-selectors</li> 
+          <li className="module__list--item">How to create pseudo-elements</li> 
+          <li className="module__list--item">Useful CSS debugging tricks</li> 
+          <li className="module__list--item">How to create your own float-grid</li> 
+          <li className="module__list--item">How to use Flexbox</li> 
+          <li className="module__list--item">How to use CSS Grid</li> 
+          <li className="module__list--item">How to style inputs and use HTML5-regex with CSS-validation</li> 
+          <li className="module__list--item">How to use Clip Path to create skewed angles on elements</li> 
+          <li className="module__list--item">What is a "checkbox-hack" and how can we use it to provide responsive user-experiences</li> 
+          <li className="module__list--item">How to use transitions to create basic animations</li> 
+          <li className="module__list--item">How to use CSS keyframes to make more dynamic animations</li> 
+          <li className="module__list--item">How to use animation <em>responsibly</em></li> 
         </ul>
+        <h3 className="module__objectives">Utilizing the Learning Objectives:</h3>
+        <p className="module__text">
+          Each lesson beings with a brief list of learning objectives. For those
+          who are less familiar with their role in learning, these are not the
+          'cliff notes' for the lesson. Learning objectives are meant as a way to
+          prepare you for what you are about to read so that your mind has a better
+          frame of reference regarding the purpose of the content. It is especially
+          important to briefly re-read the learning objectives before moving onto
+          the next lesson to help ensure that you feel comfortable with the information
+          provided.
+        </p>
       </div>    
+      <div className="module__buttons">
+        <a 
+          href="/"
+          className="module__buttons btn">
+          Prev
+        </a>
+        <a 
+          href="/1"
+          className="module__buttons btn">
+          Next
+        </a>
+      </div>
     </div>
   )
 }
