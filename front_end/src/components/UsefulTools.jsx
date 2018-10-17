@@ -5,14 +5,17 @@ const UsefulTools = (props) => {
     <div className="module">
       <div className="module__container">
         <h2 className="module__title">Useful Tools</h2> 
-        <h3 className="module__objectives">"We become what we behold. We shape our tools,
-          and thereafter our tools shape us." - Marshall McLuhan</h3>
+        <h3 className="module__objectives">
+          "We become what we behold. We shape our tools, and thereafter our 
+          tools shape us." - Marshall McLuhan
+        </h3>
         <p className="module__description">
-          Before we get going, take the time to bookmark some of these handy development
-          tools for designing style sheets.  While all the concepts in this course are going
-          to enhance the ease of writing and the degree of organization to your website styling;
-          clean, maintainable and reusable code can only take us part of the way towards 
-          developing beautiful websites.  Never undervalue the necessity of great tools
+          Before we get going, take the time to bookmark some of these handy 
+          development tools for designing style sheets.  While all the concepts
+          in this course are going to enhance the ease of writing and the 
+          degree of organization to your website styling; clean, maintainable 
+          and reusable code can only take us part of the way towards developing
+          beautiful websites. Never undervalue the necessity of great tools!
         </p>
         <h4 class="module__sub-title">Color Tools</h4>
         <ul className="module__list">
