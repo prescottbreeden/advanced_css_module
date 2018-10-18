@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SASS_Overview = (props) => {
+const SassOverview = (props) => {
   return (
     <div className="module">
       <div className="module__container">
@@ -90,9 +90,59 @@ const SASS_Overview = (props) => {
           ** It is important to note that the npm version of Sass installs a 
           pure JavaScript implementation which runs somewhat slower than the 
           other options listed. While this might be a consideration in 
-          extremely large codebases with millions of css rules, for most 
-          applications it will be impossible to notice the difference.
+          extremely large codebases, for most applications it will be 
+          impossible to notice the difference.
         </p>
+        <h3 className="module__objectives">
+          Linux Install
+        </h3>
+        <ul className="module__list">
+          <li className="module__list--item">
+            Download the appropriate version of Dart-sass from 
+            <a href="https://github.com/sass/dart-sass/releases/tag/1.14.2">
+              GitHub
+            </a>
+          </li> 
+          <li className="module__list--item">
+            Save the file to your home directory and rename it ".dart-sass".
+            The dot infront of the folder is simply to make it hidden. It is
+            not essential to hide the folder, but if you like organization to
+            your files and folers you can thank me later.
+          </li> 
+          <li className="module__list--item">
+            Add sass to your path by executing <strong>export 
+            PATH=$PATH:~/.dart-sass</strong>
+          </li> 
+          <li className="module__list--item">
+            Type 'sass' into your terminal. You should see a help menu appear
+            confirming the install.
+          </li> 
+        </ul>
+        <h3 className="module__objectives">
+          Mac OS X Install (Brew)
+        </h3>
+        <ul className="module__list">
+          <li className="module__list--item">
+            Run <strong>$ brew install sass/sass/sass</strong>
+          </li> 
+          <span>(It's a very sassy install for Mac users)</span>
+          <li className="module__list--item">
+            Type 'sass' into your terminal. You should see a help menu appear
+            confirming the install.
+          </li> 
+        </ul>
+        <h3 className="module__objectives">
+          Windwos Install (Chocolatey)
+        </h3>
+        <ul className="module__list">
+          <li className="module__list--item">
+            Run <strong>choco install sass -prerelease</strong>
+          </li> 
+          <li className="module__list--item">
+            Type 'sass' into your terminal. You should see a help menu appear
+            confirming the install.
+          </li> 
+        </ul>
         <h3 className="module__objectives">
           For the GUI of heart
         </h3>
@@ -101,7 +151,7 @@ const SASS_Overview = (props) => {
           the command line; however, for those who either are uncomfortable 
           using their terminal or simply prefer interacting with a graphical 
           interface, there are two free open source applications available on 
-          all systems for download:
+          all systems for download however this course will not cover them.
         </p>
         <ul className="module__list">
           <li className="module__list--item">
@@ -115,12 +165,12 @@ const SASS_Overview = (props) => {
 
       <div className="module__buttons">
         <a 
-          href="/1"
+          href="/2"
           className="module__buttons btn">
           Prev
         </a>
         <a 
-          href="/3"
+          href="/4"
           className="module__buttons btn">
           Next
         </a>
@@ -129,4 +179,4 @@ const SASS_Overview = (props) => {
   )
 }
 
-export default SASS_Overview
+export default SassOverview

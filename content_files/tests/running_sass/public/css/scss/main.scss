@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  height: 10rem;
+  width: 10rem;
+  border: 2px solid blue;
+
+  &__content {
+    padding: 1rem;
+    border: 1px dashed green;
+
+    &--text {
+      font-size: 3rem;
+    }
+  }
+}

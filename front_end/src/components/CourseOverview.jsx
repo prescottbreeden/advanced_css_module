@@ -139,7 +139,7 @@ const CourseOverview = (props) => {
           Prev
         </a>
         <a 
-          href="/1"
+          href="/2"
           className="module__buttons btn">
           Next
         </a>
