@@ -7,17 +7,24 @@ html {
   font-size: 62.5%;
 }
 
-.container {
+.header {
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.block {
+  margin: 1rem auto;
   height: 10rem;
   width: 10rem;
-  border: 2px solid blue;
 }
-.container__content {
-  padding: 1rem;
+.block__element {
   border: 1px dashed green;
 }
-.container__content--text {
+.block__element--modifier {
+  text-align: center;
   font-size: 3rem;
+  line-height: 10rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
