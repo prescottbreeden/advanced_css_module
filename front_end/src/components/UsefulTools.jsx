@@ -130,12 +130,12 @@ const UsefulTools = (props) => {
       </div>    
       <div className="module__buttons">
         <a 
-          href="/1"
+          href="/course-overview"
           className="module__buttons btn">
           Prev
         </a>
         <a 
-          href="/3"
+          href="/live-server"
           className="module__buttons btn">
           Next
         </a>

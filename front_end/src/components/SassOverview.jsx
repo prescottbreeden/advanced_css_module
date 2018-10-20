@@ -4,7 +4,7 @@ const SassOverview = (props) => {
   return (
     <div className="module">
       <div className="module__container">
-        <h2 className="module__title">SASS Overview</h2> 
+        <h2 className="module__title">Sass Overview</h2> 
         <h3 className="module__objectives">
           Learning Objectives:
         </h3>
@@ -13,42 +13,72 @@ const SassOverview = (props) => {
             What is Sass?
           </li> 
           <li className="module__list--item">
-            What is the difference between SCSS vs Sass Files?
+            What is the difference between '.scss' vs '.sass' Files?
           </li> 
           <li className="module__list--item">
             How to install and run Sass
           </li> 
         </ul>
         <h3 className="module__objectives">
-          What is SASS?
+          What is Sass?
         </h3>
         <p className="module__text">
-          SASS stands for "Syntactically Awesome Style Sheets" and is an 
+          Sass stands for "Syntactically Awesome Style Sheets" and is an 
           extension of CSS that adds power and elegance to the basic language.
           SASS allows the use of a multitude of tools including variables, 
           nesting, mixins, imports, and more--all with a fully CSS-compatable 
-          SCSS syntax. This means that any valid CSS is also valid SCSS--making 
-          getting start with SASS and transitioning existing codebases a snap. 
+          SCSS syntax. This means that any valid CSS is also valid SCSS,
+          making both getting started with Sass as well as implementing 
+          existing codebases with Sass a snap. When you add the power of Sass
+          with the ease of learning and implenting it, it is no wonder that Sass
+          is able to claim without much of a sweat that it is "the most mature, 
+          stable, and powerful professional grade CSS extension language used
+          in the world"
         </p>
+        <p className="module__text">
+          <em>Importantly, Sass should not be confused with SAAS (software as a 
+            service)</em>
+        </p>
+        <h3 className="module__objectives">
+          Why is Sass so 'awesome'?
+        </h3>
+        <ul className="module__list">
+          <li className="module__list--item">
+            Lowest barrier to entry (indeed some of the most powerful features 
+            to Sass can be harnassed by learning a couple new symbols).
+          </li> 
+          <li className="module__list--item">
+            New collaborators can have no trouble picking it up if they have a
+            basic understanding of how CSS works.
+          </li> 
+          <li className="module__list--item">
+            By far the most engaged community with extensive support and 
+            available resources
+          </li> 
+          <li className="module__list--item">
+            Used much more widely than any of its competitors such as Less,
+            Stylus, and PostCSS
+          </li> 
+        </ul>
         <p className="module__text">
           There are two syntaxes available for Sass:
         </p>
         <ul className="module__list">
           <li className="module__list--item">
-            <strong>SCSS</strong> (aka 'Sassy CSS') which is written with 
-            brackets and identical to regular CSS. SCSS files understand most 
-            CSS hacks and vendor-specific syntaxes (e.g. IE's old 'filter' 
+            <strong>.scss</strong> : (aka 'Sassy CSS') is written with 
+            brackets and nearly identical to regular CSS. SCSS files understand 
+            most CSS hacks and vendor-specific syntaxes (e.g. IE's old 'filter' 
             syntax). SCSS files are saved with the file extension '.scss'.
           </li> 
           <li className="module__list--item">
-            <strong>Sass</strong>: a bracket-free, concise way of writing CSS 
-            which utilizes indentation rather than brackets to indicate nesting
-            (much like Python with regard to its emphasis on indentation). 
-            Sass files are saved with the file extension '.sass'.
+            <strong>.sass</strong> : a bracket-free, semi-colon-free, concise 
+            way of writing CSS which utilizes indentation rather than brackets 
+            to indicate nesting. Sass files are saved with the file extension 
+            '.sass'.
           </li> 
         </ul>
         <p className="module__text">
-          In this course you will see example code written primarily in .SCSS 
+          In this course you will see example code written primarily in SCSS 
           due to its popularity in codebases.
         </p>
         <h3 className="module__objectives">
@@ -56,8 +86,8 @@ const SassOverview = (props) => {
         </h3>
         <p className="module__text">
           This course will teach two different methods of using Sass with your
-          projects. To begin with, we will install Sass globally to our 
-          computer for simplicity to help you gain familiarity with how Sass 
+          projects. To begin with, we will globally install a version of Sass 
+          called 'Dart-Sass' to our computer.  for simplicity to help you gain familiarity with how Sass 
           works. Later in the course, we will walk through installing Sass 
           locally with a module called 'node-sass' from the Node Package 
           Manager (npm). At this phase we will begin working with npm scripts 
@@ -67,7 +97,7 @@ const SassOverview = (props) => {
           directories and boilerplate.
         </p>
         <h3 className="module__objectives">
-          Installing Sass Globally 
+          Installing Dart-Sass Globally 
         </h3>
         <p className="module__text">
           There are a couple options for installing Sass globally:

@@ -1,8 +1,6 @@
 import React from 'react'
 
 const RunningSass = (props) => {
-  let fontColor = '<font color="#839496"'
-  let endFont = '</font>'
   return (
     <div className="module">
       <div className="module__container">

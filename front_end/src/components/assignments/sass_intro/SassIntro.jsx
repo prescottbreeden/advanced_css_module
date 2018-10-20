@@ -1,9 +1,8 @@
 import React from 'react'
+import assignment from './cssAssignment_1.png'
 // const assingmentImage = require('./cssAssignment_1.png')
 
 const SassIntro = (props) => {
-  let fontColor = '<font color="#839496"'
-  let endFont = '</font>'
   return (
     <div className="module">
       <div className="module__container">
@@ -34,10 +33,24 @@ const SassIntro = (props) => {
             following image:
           </li> 
         </ul>
+        <div className="module__assignment">
         <img 
-          src="{'/cssAssignment_1.png'}"
+          alt="assignment"
+          src={assignment}
           className="img" />
-        
+        </div>
+      </div>
+      <div className="module__buttons">
+        <a 
+          href="/4"
+          className="module__buttons btn">
+          Prev
+        </a>
+        <a 
+          href="/6"
+          className="module__buttons btn">
+          Next
+        </a>
       </div>
     </div>
   )

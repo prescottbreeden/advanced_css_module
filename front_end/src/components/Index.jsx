@@ -4,7 +4,7 @@ const Index = (props) => {
   return (
     <div className="module">
       <h4>Welcome!</h4>
-      <a href="/1">Start Course!</a>
+      <a href="/course-overview">Start Course!</a>
     </div>
   )
 }
