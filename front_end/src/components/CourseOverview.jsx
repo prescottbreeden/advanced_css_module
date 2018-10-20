@@ -10,38 +10,38 @@ const CourseOverview = (props) => {
           By the end of this course, you will have a solid understanding of: 
         </p>
         <h4 class="module__sub-title">
-          Syntactically Awesome Style Sheets (SASS):
+          Syntactically Awesome Style Sheets (Sass):
         </h4>
         <ul className="module__list">
           <li className="module__list--item">
-            What is SASS
+            What is Sass
           </li> 
           <li className="module__list--item">
             How to modularize and make a component-based CSS structure
           </li> 
           <li className="module__list--item">
-            How to use utility classes to DRY up our CSS
+            How to use utility classes to <em>'DRY'</em> up our CSS
           </li> 
           <li className="module__list--item">
-            How SASS uses folder structure, partials, imports, and caching
+            How Sass uses folder structure, partials, imports, and caching
           </li> 
           <li className="module__list--item">
-            How to create variables, mixins, and functions in SASS
+            How to create variables, mixins, and functions in Sass
           </li> 
           <li className="module__list--item">
-            How to use SASS decorators
+            How to use Sass decorators
           </li> 
           <li className="module__list--item">
-            What are SASS data types and interpolation
+            What are Sass data types and how to interpolate data in CSS
           </li> 
           <li className="module__list--item">
-            How to use the SASS interactive shell
+            How to use the Sass interactive shell
           </li> 
           <li className="module__list--item">
-            How SASS nesting and parent selectors work
+            How Sass nesting and parent selectors work
           </li> 
           <li className="module__list--item">
-            How to use SASS inheritance with the Extend decorator
+            How to use Sass inheritance with the Extend decorator
           </li> 
           <li className="module__list--item">
             How to create reusable media-query functions
@@ -59,17 +59,17 @@ const CourseOverview = (props) => {
             How to define Blocks, Elements and Modifiers
           </li> 
           <li className="module__list--item">
-            How BEM and SASS overcome specificity conflicts
+            How BEM and Sass overcome specificity conflicts
           </li> 
 
         </ul>
         <h4 class="module__sub-title">CSS, CSS3, and Animations:</h4>
         <ul className="module__list">
           <li className="module__list--item">
-            Why global resets are a sign of poorly designed CSS
+            How global resets can be an indicator of poorly designed DOM and CSS
           </li> 
           <li className="module__list--item">
-            How to convert pixels to rem units quickly and easily
+            How to convert pixels to rem-units quickly and easily
           </li> 
           <li className="module__list--item">
             How the use of 'rem' instead of 'px' speeeds up responsive layout 
