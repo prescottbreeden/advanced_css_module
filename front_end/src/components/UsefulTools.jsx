@@ -3,7 +3,6 @@ import React from 'react'
 const UsefulTools = (props) => {
   const page = 1
   const nextPage = page+1
-  const prevPage = page-1
 
   return (
     <div className="module">
@@ -134,7 +133,7 @@ const UsefulTools = (props) => {
       </div>    
       <div className="module__buttons">
         <a 
-          href={prevPage}
+          href="/"
           className="module__buttons btn">
           Prev
         </a>

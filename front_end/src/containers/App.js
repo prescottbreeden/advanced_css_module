@@ -20,7 +20,7 @@ class App extends Component {
       <div className="App">
         <h1>Advanced CSS</h1>
         <Switch>
-          <Route path="/0"  exact render={(props) => <Index page={0} />} />
+          <Route path="/"  exact render={(props) => <Index page={0} />} />
           <Route path="/1" exact render={(props) => <UsefulTools page={1} />} />
           <Route path="/2" exact render={(props) => <CourseOverview page={2} />} />
           <Route path="/3" exact render={(props) => <LiveServer page={3} />} />

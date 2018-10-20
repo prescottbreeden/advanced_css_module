@@ -1,0 +1,17 @@
+.btn {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: all .2s;
+  border: 1px solid black;
+  color: black;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+  width: 10%;
+  text-align: center;
+
+  &:hover {
+    background-color: steelblue;
+    color: white;
+    width: 20%;
+  }
+}

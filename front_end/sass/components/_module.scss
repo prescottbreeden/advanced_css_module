@@ -1,0 +1,47 @@
+.module {
+  border: 1px dashed orange;
+
+  &__container {
+    padding: 2rem 3rem;
+    border: 1px dashed green;
+  }
+
+  &__title {
+    // border: 1px solid pink;
+  }
+
+  &__sub-title {
+    margin-top: 3rem;
+  }
+
+  &__objectives {
+    // border: 1px dashed purple;
+    margin-top: 2rem;
+  }
+
+  &__list {
+    margin-top: 1rem;
+    list-style-type: decimal;
+    border: 1px solid black;
+    padding: 0 1rem;
+    // display: inline-block;
+
+    &--item {
+      margin: 1rem 3.5rem;
+
+    }
+  }
+
+  &__text {
+    margin-top: 1rem;
+    // border: 1px dashed red;
+    // margin-left: 2rem;
+
+  }
+
+  &__buttons {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}

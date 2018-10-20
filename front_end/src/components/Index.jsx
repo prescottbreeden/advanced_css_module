@@ -60,7 +60,13 @@ const Index = (props) => {
           </li> 
         </ul>
       </div>
-      <a href={nextPage}>Start Course!</a>
+      <div className="module__buttons">
+        <a 
+          href={nextPage}
+          className="btn u-center u-width-50">
+          Start Course!
+        </a>
+      </div>
     </div>
   )
 }

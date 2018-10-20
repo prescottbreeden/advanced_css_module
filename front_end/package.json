@@ -56,7 +56,12 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "watch:sass": "node-sass sass/main.scss src/index.css -w",
+    "compile:sass": "node-sass sass/main.scss src/styles.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/styles.comp.css -o src/styles.prefixed.css",
+    "compress:css": "node-sass src/styles.prefixed.css src/styles.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -107,5 +112,18 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "hoek": "^5.0.4",
+    "node-minify": "^3.5.1",
+    "node-sass": "^4.9.4",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^6.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
