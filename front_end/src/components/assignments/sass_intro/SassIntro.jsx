@@ -4,8 +4,8 @@ import assignment from './cssAssignment_1.png'
 
 const SassIntro = (props) => {
   const page = props.page
-  const prevPage = props.page-1
-  const nextPage = props.page+1
+  const prevPage = page-1
+  const nextPage = page+1
 
   return (
     <div className="module">
@@ -47,12 +47,12 @@ const SassIntro = (props) => {
       <div className="module__buttons">
         <a 
           href={prevPage}
-          className="module__buttons btn">
+          className="btn">
           Prev
         </a>
         <a 
           href={nextPage}
-          className="module__buttons btn">
+          className="btn">
           Next
         </a>
       </div>

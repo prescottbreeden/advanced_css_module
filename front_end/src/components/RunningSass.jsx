@@ -12,6 +12,11 @@ const RunningSass = (props) => {
         <h3 className="module__objectives">
           First Sass Project:
         </h3>
+        <p className="module__text">
+          There are no hard and fast rules for where we place our Sass files. 
+          For now we are going to place our Sass folder adjacent to our public
+          folder to help reinforce the independence of your Sass architecture.
+        </p>
         <ul className="module__list">
           <li className="module__list--item">
             Create the following folder structure:
@@ -19,22 +24,22 @@ const RunningSass = (props) => {
         </ul>
         <div className="u-folders">
           <pre>{`
-          `}<font color="#839496"><b>{`.`}</b></font>{`
-          ├── index.html
-          └── `}<font color="#839496"><b>public</b></font>{`
-            └──`}<font color="#839496"><b>css</b></font>{`
-                └──`}<font color="#839496"><b>scss</b></font>{`
-                    └── main.scss
-         `}</pre>
+            `}&#128193;{` first_sass_project
+            │      
+            ├── index.html
+            │      
+            ├──`}&#128193;{` public
+            │   └──`}&#128193;{` css
+            │      
+            └──`}&#128193;{` sass
+                └── main.scss`}
+          </pre>
         </div>
         <p className="module__text">
-            <b>Important:</b> note the file suffix for main.scss is '.scss' 
-        </p>
-        <p className="module__text">
-          There are no hard and fast rules for where we place our Sass files,
-          however, since SCSS files are also completely valid CSS files, and
-          their purpose is the same, it makes logical sense to place them as
-          a subdirectory within our css directory.
+          <span className="u-font-small u-font-italic">
+            Our css folder is intentionally empty and be sure that you 
+            have the correct file suffix for 'main.scss'
+          </span>
         </p>
         <ul className="module__list">
           <li className="module__list--item">
@@ -132,12 +137,12 @@ const RunningSass = (props) => {
       <div className="module__buttons">
         <a 
           href={prevPage}
-          className="module__buttons btn">
+          className="btn">
           Prev
         </a>
         <a 
           href={nextPage}
-          className="module__buttons btn">
+          className="btn">
           Next
         </a>
       </div>

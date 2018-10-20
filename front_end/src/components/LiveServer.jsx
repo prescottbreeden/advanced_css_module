@@ -75,12 +75,12 @@ const LiveServer = (props) => {
       <div className="module__buttons">
         <a 
           href={prevPage}
-          className="module__buttons btn">
+          className="btn">
           Prev
         </a>
         <a 
           href={nextPage}
-          className="module__buttons btn">
+          className="btn">
           Next
         </a>
       </div>

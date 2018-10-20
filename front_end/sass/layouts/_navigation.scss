@@ -1,0 +1,27 @@
+.nav {
+  width: 30%;
+  min-width: 25rem;
+  max-width: 30rem;
+  // min-height: 100vh;
+  background-color: $color-primary;
+  color: $color-white;
+
+  &__section {
+
+    &--title {
+      margin: 1rem;
+    }
+
+    &--item {
+      font-size: 1.5rem;
+      padding: 1rem;
+      padding-left: 2rem;
+
+      &:hover {
+        background-color: $color-secondary;
+        color: yellow;
+        cursor: pointer;
+      }
+    }
+  }
+}

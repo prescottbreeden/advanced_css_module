@@ -12,6 +12,13 @@ html {
   font-size: 62.5%;
   font-family: 'Lato', sans-serif; }
 
+a {
+  text-decoration: none;
+  color: #3f4d5a;
+  font-weight: 700; }
+  a:hover {
+    text-decoration: underline; }
+
 .u-center {
   margin: 0 auto !important; }
 
@@ -55,3 +62,30 @@ html {
     margin: 1rem;
     display: flex;
     justify-content: space-between; }
+
+.header {
+  padding: 2rem 1rem;
+  background-color: #1b9bc5;
+  color: #eee;
+  text-align: center; }
+
+.nav {
+  width: 30%;
+  min-width: 25rem;
+  max-width: 30rem;
+  background-color: #3f4d5a;
+  color: #eee; }
+  .nav__section--title {
+    margin: 1rem; }
+  .nav__section--item {
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-left: 2rem; }
+    .nav__section--item:hover {
+      background-color: #1b9bc5;
+      color: yellow;
+      cursor: pointer; }
+
+.app__container {
+  width: 100%;
+  display: flex; }
