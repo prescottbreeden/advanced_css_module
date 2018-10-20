@@ -1,6 +1,10 @@
 import React from 'react'
 
 const UsefulTools = (props) => {
+  const page = 1
+  const nextPage = page+1
+  const prevPage = page-1
+
   return (
     <div className="module">
       <div className="module__container">
@@ -17,7 +21,7 @@ const UsefulTools = (props) => {
           and reusable code can only take us part of the way towards developing
           beautiful websites. Never undervalue the necessity of great tools!
         </p>
-        <h4 class="module__sub-title">Color Tools</h4>
+        <h4 className="module__sub-title">Color Tools</h4>
         <ul className="module__list">
           <li className="module__list--item">
             <a 
@@ -66,7 +70,7 @@ const UsefulTools = (props) => {
           </li> 
         </ul>
 
-        <h4 class="module__sub-title">Font Tools</h4>
+        <h4 className="module__sub-title">Font Tools</h4>
         <ul className="module__list">
           <li className="module__list--item">
             <a 
@@ -97,7 +101,7 @@ const UsefulTools = (props) => {
           </li> 
         </ul>
 
-        <h4 class="module__sub-title">Learn More About...</h4>
+        <h4 className="module__sub-title">Learn More About...</h4>
         <ul className="module__list">
           <li className="module__list--item">
             <a 
@@ -130,12 +134,12 @@ const UsefulTools = (props) => {
       </div>    
       <div className="module__buttons">
         <a 
-          href="/course-overview"
+          href={prevPage}
           className="module__buttons btn">
           Prev
         </a>
         <a 
-          href="/live-server"
+          href={nextPage}
           className="module__buttons btn">
           Next
         </a>

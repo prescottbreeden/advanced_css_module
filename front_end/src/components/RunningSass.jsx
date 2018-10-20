@@ -1,6 +1,10 @@
 import React from 'react'
 
 const RunningSass = (props) => {
+  const page = props.page
+  const prevPage = page-1
+  const nextPage = page+1
+
   return (
     <div className="module">
       <div className="module__container">
@@ -122,15 +126,17 @@ const RunningSass = (props) => {
           export a new CSS style sheet to your output location.
         </p>
       </div>    
-      
+      <div className="module__video">
+        INSERT VIDEO
+      </div>
       <div className="module__buttons">
         <a 
-          href="/3"
+          href={prevPage}
           className="module__buttons btn">
           Prev
         </a>
         <a 
-          href="/5"
+          href={nextPage}
           className="module__buttons btn">
           Next
         </a>

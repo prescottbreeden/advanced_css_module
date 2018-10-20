@@ -20,13 +20,13 @@ class App extends Component {
       <div className="App">
         <h1>Advanced CSS</h1>
         <Switch>
-          <Route path="/" exact component={Index} />
-          <Route path="/course-overview" exact component={CourseOverview} />
-          <Route path="/useful-tools" exact component={UsefulTools} />
-          <Route path="/live-server" exact component={LiveServer} />
-          <Route path="/sass-overview" exact component={SassOverview} />
-          <Route path="/running-sass" exact component={RunningSass} />
-          <Route path="/sass-intro" exact component={SassIntro} />
+          <Route path="/0"  exact render={(props) => <Index page={0} />} />
+          <Route path="/1" exact render={(props) => <UsefulTools page={1} />} />
+          <Route path="/2" exact render={(props) => <CourseOverview page={2} />} />
+          <Route path="/3" exact render={(props) => <LiveServer page={3} />} />
+          <Route path="/4" exact render={(props) => <SassOverview page={4} />} />
+          <Route path="/5" exact render={(props) => <RunningSass page={5} />} />
+          <Route path="/6" exact render={(props) => <SassIntro page={6} />} />
         </Switch>
       </div>
     );

@@ -1,6 +1,10 @@
 import React from 'react'
 
 const CourseOverview = (props) => {
+  const page = props.page
+  const nextPage = page+1
+  const prevPage = page-1
+
   return (
     <div className="module">
       <div className="module__container">
@@ -9,7 +13,7 @@ const CourseOverview = (props) => {
         <p className="module__text">
           By the end of this course, you will have a solid understanding of: 
         </p>
-        <h4 class="module__sub-title">
+        <h4 className="module__sub-title">
           Syntactically Awesome Style Sheets (Sass):
         </h4>
         <ul className="module__list">
@@ -50,7 +54,7 @@ const CourseOverview = (props) => {
             How to use scripting in your dev workflow
           </li> 
         </ul>
-        <h4 class="module__sub-title">Block Element Modifiers (BEM):</h4>
+        <h4 className="module__sub-title">Block Element Modifiers (BEM):</h4>
         <ul className="module__list">
           <li className="module__list--item">
             What is BEM and why is it important
@@ -63,7 +67,7 @@ const CourseOverview = (props) => {
           </li> 
 
         </ul>
-        <h4 class="module__sub-title">CSS, CSS3, and Animations:</h4>
+        <h4 className="module__sub-title">CSS, CSS3, and Animations:</h4>
         <ul className="module__list">
           <li className="module__list--item">
             How global resets can be an indicator of poorly designed DOM and CSS
@@ -134,12 +138,12 @@ const CourseOverview = (props) => {
       </div>    
       <div className="module__buttons">
         <a 
-          href="/"
+          href={prevPage}
           className="module__buttons btn">
           Prev
         </a>
         <a 
-          href="/useful-tools"
+          href={nextPage}
           className="module__buttons btn">
           Next
         </a>

@@ -1,6 +1,10 @@
 import React from 'react'
 
 const LiveServer = (props) => {
+  const page = props.page
+  const nextPage = page+1
+  const prevPage = page-1
+
   return (
     <div className="module">
       <div className="module__container">
@@ -68,15 +72,14 @@ const LiveServer = (props) => {
           </li> 
         </ul>
       </div>    
-
       <div className="module__buttons">
         <a 
-          href="/useful-tools"
+          href={prevPage}
           className="module__buttons btn">
           Prev
         </a>
         <a 
-          href="/sass-overview"
+          href={nextPage}
           className="module__buttons btn">
           Next
         </a>

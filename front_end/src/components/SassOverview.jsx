@@ -1,6 +1,10 @@
 import React from 'react'
 
 const SassOverview = (props) => {
+  const page = props.page
+  const nextPage = page+1
+  const prevPage = page-1
+
   return (
     <div className="module">
       <div className="module__container">
@@ -241,12 +245,12 @@ const SassOverview = (props) => {
 
       <div className="module__buttons">
         <a 
-          href="/2"
+          href={prevPage}
           className="module__buttons btn">
           Prev
         </a>
         <a 
-          href="/4"
+          href={nextPage}
           className="module__buttons btn">
           Next
         </a>

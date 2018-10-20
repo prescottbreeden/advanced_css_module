@@ -3,6 +3,10 @@ import assignment from './cssAssignment_1.png'
 // const assingmentImage = require('./cssAssignment_1.png')
 
 const SassIntro = (props) => {
+  const page = props.page
+  const prevPage = props.page-1
+  const nextPage = props.page+1
+
   return (
     <div className="module">
       <div className="module__container">
@@ -42,12 +46,12 @@ const SassIntro = (props) => {
       </div>
       <div className="module__buttons">
         <a 
-          href="/4"
+          href={prevPage}
           className="module__buttons btn">
           Prev
         </a>
         <a 
-          href="/6"
+          href={nextPage}
           className="module__buttons btn">
           Next
         </a>
