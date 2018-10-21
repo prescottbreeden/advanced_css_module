@@ -6,6 +6,17 @@
   background-color: $color-primary;
   color: $color-white;
 
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    font-weight: 700;
+
+    &:hover {
+      text-decoration: underline;  
+    }
+
+  }
+
   &__section {
 
     &--title {

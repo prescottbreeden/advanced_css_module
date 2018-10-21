@@ -1,9 +1,9 @@
 .module {
-  border: 1px dashed orange;
+  // border: 1px dashed orange;
 
   &__container {
     padding: 2rem 3rem;
-    border: 1px dashed green;
+    // border: 1px dashed green;
   }
 
   &__title {
@@ -22,7 +22,6 @@
   &__list {
     margin-top: 1rem;
     list-style-type: decimal;
-    border: 1px solid black;
     padding: 0 1rem;
     // display: inline-block;
 
@@ -39,12 +38,36 @@
 
   }
 
+  &__terminal-code {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: $color-white;
+    font-family: courier;
+    font-size: 1.5rem;
+  }
+
   &__video {
 
     video {
       width: 100%;
       height: auto;
     }
+  }
+
+  &__assignment {
+    border: 2px solid black;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__folders {
+    background-color: #eee;
+  }
+
+  &__markup {
+    background-color: #eee;
   }
 
   &__buttons {

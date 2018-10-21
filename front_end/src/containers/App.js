@@ -26,13 +26,111 @@ class App extends Component {
           <nav className="nav">
             <div className="nav__section"> 
               1. Introduction
-              <div className="nav__section--item">Index</div>
-              <div className="nav__section--item">Useful Tools</div>
-              <div className="nav__section--item">Course Overview</div>
-              <div className="nav__section--item">Live Server</div>
-              <div className="nav__section--item">Sass Overview</div>
-              <div className="nav__section--item">Running Sass</div>
-              <div className="nav__section--item">Assignment: Sass Intro</div>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Index</div>
+              </a>
+              <a href="/1" className="nav__link">
+                <div className="nav__section--item">Useful Tools</div>
+              </a>
+              <a href="/2" className="nav__link">
+                <div className="nav__section--item">Course Overview</div>
+              </a>
+              <a href="/3" className="nav__link">
+                <div className="nav__section--item">Live Server</div>
+              </a>
+              <a href="/4" className="nav__link">
+                <div className="nav__section--item">Sass Overview</div>
+              </a>
+              <a href="/5" className="nav__link">
+                <div className="nav__section--item">Sass Install</div>
+              </a>
+              <a href="/6" className="nav__link">
+                <div className="nav__section--item">Running Sass</div>
+              </a>
+              <a href="/7" className="nav__link">
+                <div className="nav__section--item">Assignment: Sass Intro</div>
+              </a>
+            </div>
+            <div className="nav__section"> 
+              2. Sass 
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">What is BEM?</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Assignment: BEM</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Nesting</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Assignment: Nesting</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Variables</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Assignment: Variables</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Mixins</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Assignment: Mixins</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Extends</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Assignment: Extends</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Functions</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Assignment: Functions</div>
+              </a>
+            </div>
+            <div className="nav__section"> 
+              3. Modularizing Sass 
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">7-1 pattern</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Scripting</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Using REM</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Float Grid and Clear Fixes</div>
+              </a>
+            </div>
+            <div className="nav__section"> 
+              4. Advanced CSS
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Pseudo Selectors</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Pseudo Elements</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Flexbox</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">CSS Grid</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">HTML/CSS Validation</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Clip Path</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Check-box Hacking</div>
+              </a>
+              <a href="/" className="nav__link">
+                <div className="nav__section--item">Keyframe Animations</div>
+              </a>
             </div>
           </nav>
           <main className="main">

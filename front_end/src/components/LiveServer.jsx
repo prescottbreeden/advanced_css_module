@@ -35,40 +35,47 @@ const LiveServer = (props) => {
           compiler stops running during development).
         </p>
         <h3 className="module__objectives">
-          Installing 'npm' Globally 
+          Installing 'npm' 
         </h3>
-        <ul className="module__list">
-          <li className="module__list--item">
-            Verify that Node.js is installed by executing:
-            <span className="u-terminal-code"> $ npm</span>.  If you do not see 
-            a help menu appear then visit <a href="https://nodejs.org">
-              nodejs.org</a> and download either the
-            latest version or the LTS for your operating system.
-          </li> 
-        </ul>
+        <p className="module__text">
+          Verify that Node.js is installed by executing:
+        </p>
+        <p className="module__terminal-code">
+          $ npm
+        </p>
+        <p className="module__text">
+          If you do not see a help menu appear then visit <a 
+            href="https://nodejs.org">nodejs.org</a> and download either the
+          latest version or the LTS for your operating system.
+        </p>
         <h3 className="module__objectives">
-          Installing 'live-server' Globally 
+          Installing 'live-server'
         </h3>
-        <ul className="module__list">
-          <li className="module__list--item">
-            Once you have npm installed, execute:
-            <span className="u-terminal-code"> $ npm install -g live-server</span>
-          </li> 
-        </ul>
+        <p className="module__text">
+          Once you have npm installed, execute:
+        </p>
+        <p className="module__terminal-code">
+          $ npm install -g live-server
+        </p>
+        <p className="module__text">
+        </p>
         <h3 className="module__objectives">
           Running live-server
         </h3>
         <ul className="module__list">
           <li className="module__list--item">
             Navigate to a directory that contains an html file and execute:
-            <span className="u-terminal-code"> $ live-server</span>
           </li> 
+          <p className="module__terminal-code">
+            $ live-server
+          </p>
           <li className="module__list--item">
-            Open 'localhost:8080' in a browser to see your file
+            If a browser window does not appear automatically, visit
+            'localhost:8080' in a browser
           </li> 
           <li className="module__list--item">
             While the server is running, edit a file and save it, you should see
-            a notification that changes were detected
+            a notification saying that changes were detected
           </li> 
         </ul>
       </div>    

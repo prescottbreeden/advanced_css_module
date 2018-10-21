@@ -23,7 +23,7 @@ const RunningSass = (props) => {
             Create the following folder structure:
           </li> 
         </ul>
-        <div className="u-folders">
+        <div className="module__folders">
           <pre>{`
             `}&#128193;{` first_sass_project
             │      
@@ -33,7 +33,8 @@ const RunningSass = (props) => {
             │   └──`}&#128193;{` css
             │      
             └──`}&#128193;{` sass
-                └── main.scss`}
+                └── main.scss
+              `}
           </pre>
         </div>
         <p className="module__text">
@@ -71,7 +72,7 @@ const RunningSass = (props) => {
           <div class="block__element">
             <p class="block__element--modifier">3</p>
           </div>
-        </div
+        </div>
       </body>
       </html>
         `}</pre></div>
@@ -95,22 +96,16 @@ const RunningSass = (props) => {
           the file, make sure your terminal is at the root level of your
           project directory and execute:
         </p>
-        <ul className="module__list">
-          <li className="module__list--item">
-            sass public/css/scss/main.scss public/css/styles.css
-          </li> 
-        </ul>
+        <p className="module__terminal-code">
+          $ sass sass/main.scss public/css/styles.css
+        </p>
         <p className="module__text">
           This command will tell Sass to take an input file ('main.scss') and
           then gives an export location for the css output ('styles.css').
         </p>
-        <ul className="module__list">
-          <li className="module__list--item">
-            sass {`
-              {{ input-file }} {{ output-file }}
-           `}
-          </li> 
-        </ul>
+        <p className="module__terminal-code">
+          sass <em>{`{{ input-file }} {{ output-file }}`}</em>
+        </p>
         <p className="module__text">
           You should now see in your css folder a file named styles.css, so
           if you refresh your index.html, you will notice we now have our
@@ -119,21 +114,19 @@ const RunningSass = (props) => {
         <p className="module__text">
           This is the command that you run to compile any scss files; however,
           executing this command for every change to our scss would be a real
-          drag to say the least.  Fortunately dart-sass has a watcher built
+          drag to say the least.  Fortunately Sass has a watcher built
           into it which you can activate by adding the --watch flag:
         </p>
-        <ul className="module__list">
-          <li className="module__list--item">
-            sass --watch public/css/scss/main.scss public/css/styles.css
-          </li> 
-        </ul>
+        <p className="module__terminal-code">
+          $ sass --watch sass/main.scss public/css/styles.css
+        </p>
         <p className="module__text">
           Now each time you save a change to your main.scss file, Sass will
           export a new CSS style sheet to your output location.
         </p>
       </div>    
       <h3 className="module__objectives">
-        Demonstration video
+        Demonstration Video
       </h3>
       <div className="module__video">
         <video controls>

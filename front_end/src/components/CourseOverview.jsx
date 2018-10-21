@@ -17,108 +17,109 @@ const CourseOverview = (props) => {
           Syntactically Awesome Style Sheets (Sass):
         </h4>
         <ul className="module__list">
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             What is Sass
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to modularize and make a component-based CSS structure
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to use utility classes to <em>'DRY'</em> up our CSS
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How Sass uses folder structure, partials, imports, and caching
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to create variables, mixins, and functions in Sass
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to use Sass decorators
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             What are Sass data types and how to interpolate data in CSS
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to use the Sass interactive shell
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How Sass nesting and parent selectors work
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to use Sass inheritance with the Extend decorator
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to create reusable media-query functions
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to use scripting in your dev workflow
           </li> 
         </ul>
         <h4 className="module__sub-title">Block Element Modifiers (BEM):</h4>
         <ul className="module__list">
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             What is BEM and why is it important
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to define Blocks, Elements and Modifiers
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How BEM and Sass overcome specificity conflicts
           </li> 
 
         </ul>
         <h4 className="module__sub-title">CSS, CSS3, and Animations:</h4>
         <ul className="module__list">
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How global resets can be an indicator of poorly designed DOM and CSS
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to convert pixels to rem-units quickly and easily
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How the use of 'rem' instead of 'px' speeeds up responsive layout 
             workload
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             What is the difference between a <em>pseudo-selector</em> and a 
-            <em>pseudo-element</em>
+            <em> pseudo-element</em>
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             Deep dive of all major pseudo-selectors
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to create pseudo-elements
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             What are some useful CSS debugging tricks
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to create your own float-grid
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to use Flexbox
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to use CSS Grid
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to style inputs and use HTML5-regex with CSS-validation
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to use Clip Path to create skewed angles on elements
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             What is a "checkbox-hack" and how can we use it to provide 
             responsive user-experiences
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to use transitions to create basic animations
           </li> 
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             How to use CSS keyframes to make more dynamic animations
           </li> 
-          <li className="module__list--item">
-            How to use animation <em>responsibly</em>
+          <li className="module__list--item u-list-circle">
+            How to to prevent animations from causing severe performance losses 
+            in the browser
           </li> 
         </ul>
         <h3 className="module__objectives">
@@ -127,13 +128,13 @@ const CourseOverview = (props) => {
         <p className="module__text">
           Each lesson beings with a brief list of learning objectives. For 
           those who are less familiar with their role in learning, these are 
-          <strong><em>not</em></strong> the 'Cliff Notes' or TLDRs for the 
+          <strong><em> not</em></strong> the 'Cliff Notes' or TLDRs for the 
           lesson. Learning objectives are meant as a way to prepare you for 
           what you are about to read so that your mind has a better frame of 
           reference regarding the purpose of the content. It is especially
           important to briefly re-read the learning objectives before moving 
-          onto the next lesson to help ensure that you feel comfortable with 
-          the information provided.
+          onto the next lesson to help ensure that the lesson established its
+          objective based on the information provided.
         </p>
       </div>    
       <div className="module__buttons">

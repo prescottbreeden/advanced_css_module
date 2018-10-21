@@ -24,17 +24,17 @@ const SassInstall = (props) => {
           There are a couple options for installing Sass globally:
         </p>
         <ul className="module__list">
-          <li className="module__list--item">
-            Install Anywhere (Standalone)
+          <li className="module__list--item u-list-circle">
+            GitHub
           </li> 
-          <li className="module__list--item">
-            Install Anywhere (npm) <strong>*</strong>
+          <li className="module__list--item u-list-circle">
+            npm <strong>*</strong>
           </li> 
-          <li className="module__list--item">
-            Install on Windows (Chocolatey)
+          <li className="module__list--item u-list-circle">
+            Chocolatey (Windows)
           </li> 
-          <li className="module__list--item">
-            Install on Mac OS X (Homebrew)
+          <li className="module__list--item u-list-circle">
+            Homebrew (Mac OS X)
           </li> 
         </ul>
         <p className="module__text">
@@ -47,7 +47,7 @@ const SassInstall = (props) => {
         <h3 className="module__objectives">
           Linux Install
         </h3>
-        <ul className="module__list">
+        <ul className="module__list u-border-solid">
           <li className="module__list--item">
             Download the appropriate version of Sass from 
             <a href="https://github.com/sass/dart-sass/releases/tag/1.14.2">
@@ -57,13 +57,16 @@ const SassInstall = (props) => {
           <li className="module__list--item">
             Save the file to your home directory and rename it ".dart-sass".
             The dot infront of the folder is simply to make it hidden. It is
-            not essential to hide the folder, but if you like organization to
-            your files and folers you can thank me later.
+            not essential to hide the folder, but since we will never have to 
+            interact with the folder directly, it is just visual clutter that 
+            isn't needed.
           </li> 
           <li className="module__list--item">
-            Add sass to your path by executing <strong>export 
-            PATH=$PATH:~/.dart-sass</strong>
+            Add sass to your path by executing:
           </li> 
+          <p className="module__terminal-code">
+            $ export PATH=$PATH:~/.dart-sass
+          </p>
           <li className="module__list--item">
             Type 'sass' into your terminal. You should see a help menu appear
             confirming the install.
@@ -72,11 +75,14 @@ const SassInstall = (props) => {
         <h3 className="module__objectives">
           Mac OS X Install (Brew)
         </h3>
-        <ul className="module__list">
+        <ul className="module__list u-border-solid">
           <li className="module__list--item">
-            Run <strong>$ brew install sass/sass/sass</strong>
+            From your terminal, execute:  
           </li> 
-          <span>(It's a very sassy install for Mac users)</span>
+          <p className="module__terminal-code">
+            $ brew install sass/sass/sass
+          </p>
+          <span>(It's a very sassy install for Mac users!)</span>
           <li className="module__list--item">
             Type 'sass' into your terminal. You should see a help menu appear
             confirming the install.
@@ -85,10 +91,13 @@ const SassInstall = (props) => {
         <h3 className="module__objectives">
           Windwos Install (Chocolatey)
         </h3>
-        <ul className="module__list">
+        <ul className="module__list u-border-solid">
           <li className="module__list--item">
-            Run <strong>choco install sass -prerelease</strong>
+            From your command prompt, execute: 
           </li> 
+          <p className="module__terminal-code">
+            C:\> choco install sass -prerelease
+          </p>
           <li className="module__list--item">
             Type 'sass' into your terminal. You should see a help menu appear
             confirming the install.

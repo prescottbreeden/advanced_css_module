@@ -16,32 +16,34 @@ const SassIntro = (props) => {
         </h3>
         <ul className="module__list">
           <li className="module__list--item">
-            To gain comfort with dart-sass and live-server
+            To gain comfort with using basic sass functions and live-server
           </li> 
           <li className="module__list--item">
-            To refamiliarize yourself with important css concepts
-          </li> 
-          <li className="module__list--item">
-            <b>Challenge:</b> Try to use no more than 30 lines of rules
-          </li> 
-          <li className="module__list--item">
-            Suggested time limit: 20-30min
+            To refamiliarize yourself with basic css styling
           </li> 
         </ul>
         <h3 className="module__objectives">
-          First Sass Project:
+          Instructions:
         </h3>
         <ul className="module__list">
-          <li className="module__list--item">
+          <li className="module__list--item u-list-circle">
             Using the html provided in the previous lesson, reproduce the
-            following image:
+            image below
+          </li> 
+          <li className="module__list--item u-list-circle">
+            <b>Challenge:</b> Try to use no more than 30 lines of rules
+          </li> 
+          <li className="module__list--item u-list-circle">
+            Suggested time limit: 20-30min
           </li> 
         </ul>
+        <p className="module__text">
+        </p>
         <div className="module__assignment">
         <img 
           alt="assignment"
           src={assignment}
-          className="img" />
+          className="module__img" />
         </div>
       </div>
       <div className="module__buttons">
