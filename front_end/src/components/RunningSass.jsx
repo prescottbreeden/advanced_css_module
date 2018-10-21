@@ -1,4 +1,5 @@
 import React from 'react'
+import video from './running_sass.mp4'
 
 const RunningSass = (props) => {
   const page = props.page
@@ -131,8 +132,17 @@ const RunningSass = (props) => {
           export a new CSS style sheet to your output location.
         </p>
       </div>    
+      <h3 className="module__objectives">
+        Demonstration video
+      </h3>
       <div className="module__video">
-        INSERT VIDEO
+        <video controls>
+          <source 
+            type="video/mp4"
+            src={video}
+          />
+          Your browser does not support the video tag. 
+        </video>
       </div>
       <div className="module__buttons">
         <a 

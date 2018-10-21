@@ -39,6 +39,14 @@
 
   }
 
+  &__video {
+
+    video {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   &__buttons {
     margin: 1rem;
     display: flex;

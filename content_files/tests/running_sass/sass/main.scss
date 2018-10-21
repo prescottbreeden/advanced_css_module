@@ -3,28 +3,24 @@
   margin: 0;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-.header {
+body {
   text-align: center;
-  font-size: 2rem;
+  font-size: 20px;
   padding: 3rem;
 }
 
 .block {
-  margin: 1rem auto;
-  height: 10rem;
-  width: 10rem;
+  margin: 10px auto;
+  height: 100px;
+  width: 100px;
+}
 
-  &__element {
-    border: 1px dashed green;
+.block__element {
+  border: 1px dashed green;
+}
 
-    &--modifier {
-      text-align: center;
-      font-size: 3rem; 
-      line-height: 10rem;
-    }
-  }
+.block__element--modifier {
+  text-align: center;
+  font-size: 3rem; 
+  line-height: 100px;
 }

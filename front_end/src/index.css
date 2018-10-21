@@ -58,6 +58,9 @@ a {
       margin: 1rem 3.5rem; }
   .module__text {
     margin-top: 1rem; }
+  .module__video video {
+    width: 100%;
+    height: auto; }
   .module__buttons {
     margin: 1rem;
     display: flex;

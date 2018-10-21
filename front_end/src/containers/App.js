@@ -7,6 +7,7 @@ import UsefulTools from '../components/UsefulTools'
 import CourseOverview from '../components/CourseOverview'
 import LiveServer from '../components/LiveServer'
 import SassOverview from '../components/SassOverview'
+import SassInstall from '../components/SassInstall'
 import RunningSass from '../components/RunningSass'
 
 
@@ -41,8 +42,9 @@ class App extends Component {
               <Route path="/2" exact render={(props) => <CourseOverview page={2} />} />
               <Route path="/3" exact render={(props) => <LiveServer page={3} />} />
               <Route path="/4" exact render={(props) => <SassOverview page={4} />} />
-              <Route path="/5" exact render={(props) => <RunningSass page={5} />} />
-              <Route path="/6" exact render={(props) => <SassIntro page={6} />} />
+              <Route path="/5" exact render={(props) => <SassInstall page={5} />} />
+              <Route path="/6" exact render={(props) => <RunningSass page={6} />} />
+              <Route path="/7" exact render={(props) => <SassIntro page={7} />} />
             </Switch>
           </main>
         </div>
