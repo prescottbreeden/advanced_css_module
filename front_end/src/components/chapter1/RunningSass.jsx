@@ -59,18 +59,18 @@ const RunningSass = (props) => {
       <body>
         <h2>Use the containers to refresh yourself with CSS rules</h2>
         <div class="block">
-          <div class="block__element">
-            <p class="block__element--modifier">1</p>
+          <div class="block block__element">
+            <p class="block block__element--modifier">1</p>
           </div>
         </div>
         <div class="block">
-          <div class="block__element">
-            <p class="block__element--modifier">2</p>
+          <div class="block block__element">
+            <p class="block block__element--modifier">2</p>
           </div>
         </div>
         <div class="block">
-          <div class="block__element">
-            <p class="block__element--modifier">3</p>
+          <div class="block block__element">
+            <p class="block block__element--modifier">3</p>
           </div>
         </div>
       </body>

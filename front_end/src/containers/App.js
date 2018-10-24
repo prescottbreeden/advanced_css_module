@@ -1,18 +1,22 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 
-// lessons
-import Index from '../components/Index'
-import UsefulTools from '../components/UsefulTools'
-import CourseOverview from '../components/CourseOverview'
-import LiveServer from '../components/LiveServer'
-import SassOverview from '../components/SassOverview'
-import SassInstall from '../components/SassInstall'
-import RunningSass from '../components/RunningSass'
-
+// chapter 1
+import Index from '../components/chapter1/Index'
+import UsefulTools from '../components/chapter1/UsefulTools'
+import CourseOverview from '../components/chapter1/CourseOverview'
+import LiveServer from '../components/chapter1/LiveServer'
+import SassOverview from '../components/chapter1/SassOverview'
+import SassInstall from '../components/chapter1/SassInstall'
+import RunningSass from '../components/chapter1/RunningSass'
 
 // assignments
 import SassIntro from '../components/assignments/sass_intro/SassIntro'
+
+// chapter 2
+import BemIntro from '../components/chapter2/BemIntro'
+
+// assignments
 
 
 class App extends Component {
@@ -53,7 +57,7 @@ class App extends Component {
             </div>
             <div className="nav__section"> 
               2. Sass 
-              <a href="/" className="nav__link">
+              <a href="/8" className="nav__link">
                 <div className="nav__section--item">What is BEM?</div>
               </a>
               <a href="/" className="nav__link">
@@ -143,6 +147,7 @@ class App extends Component {
               <Route path="/5" exact render={(props) => <SassInstall page={5} />} />
               <Route path="/6" exact render={(props) => <RunningSass page={6} />} />
               <Route path="/7" exact render={(props) => <SassIntro page={7} />} />
+              <Route path="/8" exact render={(props) => <BemIntro page={8} />} />
             </Switch>
           </main>
         </div>
