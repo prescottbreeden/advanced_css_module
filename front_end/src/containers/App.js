@@ -11,12 +11,13 @@ import SassInstall from '../components/chapter1/SassInstall'
 import RunningSass from '../components/chapter1/RunningSass'
 
 // assignments
-import SassIntro from '../components/assignments/sass_intro/SassIntro'
+import SassIntro from '../components/chapter1/assignments/sass_intro/SassIntro'
 
 // chapter 2
 import BemIntro from '../components/chapter2/BemIntro'
 
 // assignments
+import BemAssignment from '../components/chapter2/assignments/BemAssignment'
 
 
 class App extends Component {
@@ -60,7 +61,7 @@ class App extends Component {
               <a href="/8" className="nav__link">
                 <div className="nav__section--item">What is BEM?</div>
               </a>
-              <a href="/" className="nav__link">
+              <a href="/9" className="nav__link">
                 <div className="nav__section--item">Assignment: BEM</div>
               </a>
               <a href="/" className="nav__link">
@@ -148,6 +149,7 @@ class App extends Component {
               <Route path="/6" exact render={(props) => <RunningSass page={6} />} />
               <Route path="/7" exact render={(props) => <SassIntro page={7} />} />
               <Route path="/8" exact render={(props) => <BemIntro page={8} />} />
+              <Route path="/9" exact render={(props) => <BemAssignment page={9} />} />
             </Switch>
           </main>
         </div>
