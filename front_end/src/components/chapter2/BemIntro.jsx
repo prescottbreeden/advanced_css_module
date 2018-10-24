@@ -112,11 +112,8 @@ const BemIntro = (props) => {
         </h3>
         <div className="u-border-solid">
           <p className="module__text">
-            Blocks Encapsulate a standalone entity that is meaningful on its own. 
-            While block can be nested and interact with each other, semantically 
-            they remain equal; there is no precedence or hierarchy. Holistic 
-            entities without DOM representation (such as controllers or models) 
-            can be blocks as well.
+            Parts of a block have no standalone meaning. Any element is 
+            semantically tethered to its block.
           </p>
           <ul className="module__list">
             <p className="module__text">
@@ -124,9 +121,10 @@ const BemIntro = (props) => {
             </p>
             <ul className="module__list">
               <li className="module__list--item u-list-circle">
-                Block names may consist of Latin letters, digits, and dashes. To 
-                form a CSS class, add a short prefix for the namespacing:  <span className="module__terminal-code">
-                  .block</span>
+                Element names may consist of Latin letters, digits, dashes, and 
+                underscores. CSS class is formed as block name plus two 
+                underscores plus element name:  <span className="module__terminal-code">
+                  .block__elem</span>
               </li>
             </ul>
             <p className="module__text">
@@ -134,11 +132,15 @@ const BemIntro = (props) => {
             </p>
             <ul className="module__list">
               <li className="module__list--item u-list-circle">
-                Any DOM node can be a block if it accepts a class name.
+                Any DOM node within a block can be an element.  Within a 
+                given block, all elements are semantically equal.
               </li>
               <li className="module__list--item u-list-circle">
                 Example: <span className="module__css-code">
-                  <pre>{'<div class="block">...</div>'}</pre>
+                  <pre>{`
+    <div class="block">...
+        <span class="block__elem"></span>
+    </div>`}</pre>
                 </span>
               </li>
             </ul>
@@ -150,14 +152,22 @@ const BemIntro = (props) => {
                 Use class name selector only
               </li>
               <li className="module__list--item u-list-circle">
-                No tage name or ids
+                No tag name or ids
               </li>
               <li className="module__list--item u-list-circle">
-                No dependency on other blocks/elements on a page
+                No dependency on other blocks/elements on page
               </li>
               <li className="module__list--item u-list-circle">
-                Example: <span className="module__css-code">
-                  <pre>{'.block { color: #042; }'}</pre>
+                Examples: 
+                <p className="module__text"><strong>Good</strong></p>
+                 <span className="module__css-code">
+                  <pre>{'.block__elem { color: #042; }'}</pre>
+                </span>
+                <p className="module__text"><strong>Bad</strong></p>
+                 <span className="module__css-code">
+                   <pre>{`.block .block__elem { color: #042; }
+    div.block__elem { color: #042; }   
+                    `}</pre>
                 </span>
               </li>
             </ul>
@@ -168,11 +178,8 @@ const BemIntro = (props) => {
         </h3>
         <div className="u-border-solid">
           <p className="module__text">
-            Blocks Encapsulate a standalone entity that is meaningful on its own. 
-            While block can be nested and interact with each other, semantically 
-            they remain equal; there is no precedence or hierarchy. Holistic 
-            entities without DOM representation (such as controllers or models) 
-            can be blocks as well.
+            Flags on blocks or elements. Use them to change appearance, behavior 
+            or state.
           </p>
           <ul className="module__list">
             <p className="module__text">
@@ -180,9 +187,18 @@ const BemIntro = (props) => {
             </p>
             <ul className="module__list">
               <li className="module__list--item u-list-circle">
-                Block names may consist of Latin letters, digits, and dashes. To 
-                form a CSS class, add a short prefix for the namespacing:  <span className="module__terminal-code">
-                  .block</span>
+                Modifier names may consist of Latin letters, digits, dashes and 
+                unserscores. CSS class is formed as block's or element's name 
+                plys two dashes: <span className="module__terminal-code">
+                  .block--mod</span> or <span className="module__terminal-code">
+                  .block__elem--mod</span>.
+              </li>
+              <li className="module__list--item">
+                Complex modifiers are separated by single dashes:
+                  <span className="module__terminal-code">
+                  .block--color-red</span> or <span className="module__terminal-code">
+                  .block--color-green</span>.
+
               </li>
             </ul>
             <p className="module__text">
@@ -190,11 +206,21 @@ const BemIntro = (props) => {
             </p>
             <ul className="module__list">
               <li className="module__list--item u-list-circle">
-                Any DOM node can be a block if it accepts a class name.
+                Modifier is an extra class name which you add to a block/element 
+                DOM node. Add modifier classes only to blocks/elements they 
+                modify, and keep the original class:
               </li>
               <li className="module__list--item u-list-circle">
-                Example: <span className="module__css-code">
-                  <pre>{'<div class="block">...</div>'}</pre>
+                Example: 
+                <p className="module__text"><strong>Good</strong></p>
+                 <span className="module__css-code">
+                  <pre>{'.block__elem { color: #042; }'}</pre>
+                </span>
+                <p className="module__text"><strong>Bad</strong></p>
+                 <span className="module__css-code">
+                   <pre>{`.block .block__elem { color: #042; }
+    div.block__elem { color: #042; }   
+                    `}</pre>
                 </span>
               </li>
             </ul>
@@ -203,17 +229,17 @@ const BemIntro = (props) => {
             </p>
             <ul className="module__list">
               <li className="module__list--item u-list-circle">
-                Use class name selector only
+                Use modifier class name as selector
               </li>
               <li className="module__list--item u-list-circle">
-                No tage name or ids
+                No tag name or ids
               </li>
               <li className="module__list--item u-list-circle">
-                No dependency on other blocks/elements on a page
+                To alter the DOM based on a block-level modifier:
               </li>
               <li className="module__list--item u-list-circle">
                 Example: <span className="module__css-code">
-                  <pre>{'.block { color: #042; }'}</pre>
+                  <pre>{'.block-- { color: #042; }'}</pre>
                 </span>
               </li>
             </ul>
