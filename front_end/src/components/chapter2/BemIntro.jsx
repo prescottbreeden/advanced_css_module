@@ -81,9 +81,10 @@ const BemIntro = (props) => {
                 Any DOM node can be a block if it accepts a class name.
               </li>
               <li className="module__list--item u-list-circle">
-                Example: <span className="module__css-code">
+                Example: 
+                <p className="module__terminal-code">
                   <pre>{'<div class="block">...</div>'}</pre>
-                </span>
+                </p>
               </li>
             </ul>
             <p className="module__text">
@@ -100,9 +101,10 @@ const BemIntro = (props) => {
                 No dependency on other blocks/elements on a page
               </li>
               <li className="module__list--item u-list-circle">
-                Example: <span className="module__css-code">
+                Example: 
+                <p className="module__terminal-code">
                   <pre>{'.block { color: #042; }'}</pre>
-                </span>
+                </p>
               </li>
             </ul>
           </ul>
@@ -138,11 +140,11 @@ const BemIntro = (props) => {
               </li>
               <li className="module__list--item u-list-circle">
                 Example: 
-                <pre>{`
-       <div class="block">...
-           <span className="block__elem"></span>
-       </div>
-                    `}</pre>
+                <p className="module__terminal-code">
+                <pre>{`<div class="block">...
+  <span className="block__elem"></span>
+</div>`}</pre>
+                </p>
               </li>
             </ul>
             <p className="module__text">
@@ -161,14 +163,14 @@ const BemIntro = (props) => {
               <li className="module__list--item u-list-circle">
                 Examples: 
                 <p className="module__text"><strong>Good</strong></p>
-                <pre>{`
-       .block__elem { color: #042; }
-                    `}</pre>
+                <p className="module__terminal-code">
+                  <pre>{`.block__elem { color: #042; }`}</pre>
+                </p>
                 <p className="module__text"><strong>Bad</strong></p>
-                <pre>{`
-       .block .block__elem { color: #042; }
-            div.block__elem { color: #042; }
-                    `}</pre>
+                <p className="module__terminal-code">
+                  <pre>{`.block .block__elem { color: #042; }
+    div.block__elem { color: #042; }`}</pre>
+                </p>
               </li>
             </ul>
           </ul>
@@ -205,9 +207,16 @@ const BemIntro = (props) => {
                 modify, and keep the origin al class:
               </li>
               <li className="module__list--item u-list-circle">
-                Example: <span className="module__css-code">
-                  <pre>{'<div class="block">...</div>'}</pre>
-                </span>
+                Examples: 
+                <p className="module__text"><strong>Good</strong></p>
+                <p className="module__terminal-code">
+                  <pre>{`<div class="block block--mod">...</div>
+      <div class="block block--size-big block--shadow-yes">...</div>`}</pre>
+                  </p>
+                <p className="module__text"><strong>Bad</strong></p>
+                <p className="module__terminal-code">
+                  <pre>{`<div class="block--mod">...</div>`}</pre>
+                </p>
               </li>
             </ul>
             <p className="module__text">
@@ -215,19 +224,23 @@ const BemIntro = (props) => {
             </p>
             <ul className="module__list">
               <li className="module__list--item u-list-circle">
-                Use class name selector only
+                Use the modifier class name as the selector:
               </li>
+              <p className="module__terminal-code">
+                  <pre>{'.block--hidden { }'}</pre>
+              </p>
               <li className="module__list--item u-list-circle">
-                No tag name or ids
+                Use to alter elements based on a block-level document object:
               </li>
+              <p className="module__terminal-code">
+                  <pre>{'.block--mod .block__elem { }'}</pre>
+              </p>
               <li className="module__list--item u-list-circle">
-                No dependency on other blocks/elements on a page
+                Use as an element modifier
               </li>
-              <li className="module__list--item u-list-circle">
-                Example: <span className="module__css-code">
-                  <pre>{'.block { color: #042; }'}</pre>
-                </span>
-              </li>
+              <p className="module__terminal-code">
+                  <pre>{'.block__elem--mod { }'}</pre>
+              </p>
             </ul>
           </ul>
         </div>
