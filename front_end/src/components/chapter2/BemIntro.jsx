@@ -40,7 +40,7 @@ const BemIntro = (props) => {
           Think even to your own code and the naming conventions you have used 
           with your DOM. Are you consistent with the use of classes versus ids? 
           Do you write reusable components with your CSS or are you just adding 
-          more rules until it looks right and then moving onto the next element? 
+          more rules until it looks right and then moving on to the next element? 
         </p>
         <p className="module__text">
           If you find these are questions you have not spent much time thinking 
@@ -52,15 +52,30 @@ const BemIntro = (props) => {
           scale.
         </p>
         <h3 className="module__objectives">
+          How does BEM help us write cleaner code
+        </h3>
+        <p className="module__text">
+          The problems that arise from "spaghetti code" impact developers on 
+          every level. Disorganized and inefficient code is hard to read, hard 
+          to debug, hard to maintain, hard to scale, and it performs poorly. 
+          However, the irony is that it is very difficult to realize when we are 
+          being inefficient until someone points out why something is not very 
+          clean. Just think back on everything you have learned so far about 
+          things that are considered good practice
+        </p>
+        <p className="module__text">
+          This is why programmers develop design patterns that are 
+          thoroughly tested and widely spoken so we don't have to reinvent the 
+          wheel to write beautiful code.
+        </p>
+        <h3 className="module__objectives">
           Block
         </h3>
         <div className="u-border-solid">
           <p className="module__text">
-            Blocks Encapsulate a standalone entity that is meaningful on its own. 
-            While block can be nested and interact with each other, semantically 
-            they remain equal; there is no precedence or hierarchy. Holistic 
-            entities without DOM representation (such as controllers or models) 
-            can be blocks as well.
+            Blocks encapsulate a standalone entity that is meaningful on its own. 
+            While blocks can be nested and interact with each other, semantically 
+            they remain equal; there is no precedence or hierarchy.
           </p>
           <ul className="module__list">
             <p className="module__text">
@@ -68,9 +83,11 @@ const BemIntro = (props) => {
             </p>
             <ul className="module__list">
               <li className="module__list--item u-list-circle">
-                Block names may consist of Latin letters, digits, and dashes. To 
-                form a CSS class, add a short prefix for the namespacing:  <span className="module__terminal-code">
-                  .block</span>
+                Block names may consist of Latin letters, digits, and dashes.
+              </li>
+              <li className="module__list--item u-list-circle">
+                Example:
+                <p className="module__terminal-code"> .block</p>
               </li>
             </ul>
             <p className="module__text">
