@@ -32,7 +32,7 @@ class App extends Component {
             <div className="nav__section"> 
               1. Introduction
               <a href="/" className="nav__link">
-                <div className="nav__section--item">Index</div>
+                <div className="nav__section--item">Introduction</div>
               </a>
               <a href="/1" className="nav__link">
                 <div className="nav__section--item">Useful Tools</div>

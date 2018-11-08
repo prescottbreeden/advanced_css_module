@@ -29,7 +29,7 @@ const SassOverview = (props) => {
         <p className="module__text">
           Sass stands for "Syntactically Awesome Style Sheets" and is an 
           extension of CSS that adds power and elegance to the basic language.
-          SASS allows the use of a multitude of tools including variables, 
+          Sass allows the use of a multitude of tools including variables, 
           nesting, mixins, imports, and more--all with a fully CSS-compatable 
           SCSS syntax. This means that any valid CSS is also valid SCSS,
           making both getting started with Sass as well as implementing 
@@ -90,7 +90,8 @@ const SassOverview = (props) => {
           fundamentally important issues such as memory allocation and pointers.
           However, high level languages also carry with them an expressiveness 
           that a less abstracted language doesn't.  Python's list comprehension 
-          is a terrific example where per-line code efficiency is hard to match.
+          is a terrific example where the "code-per-line" efficiency is hard to 
+          match.
         </p>
         <p className="module__text">
           Forunately, Sass still <em>feels</em> and behaves very much like CSS 

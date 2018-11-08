@@ -49,10 +49,7 @@ const SassInstall = (props) => {
         </h3>
         <ul className="module__list u-border-solid">
           <li className="module__list--item">
-            Download the appropriate version of Sass from 
-            <a href="https://github.com/sass/dart-sass/releases/tag/1.14.2">
-              GitHub
-            </a>
+            Download the appropriate version of Sass from Github: <a href="https://github.com/sass/dart-sass/releases/tag/1.14.2">here</a>
           </li> 
           <li className="module__list--item">
             Save the file to your home directory and rename it ".dart-sass".
@@ -122,7 +119,7 @@ const SassInstall = (props) => {
           </li> 
         </ul>
         <h3 className="module__objectives">
-          Sass syntax:
+          A note about Sass syntax:
         </h3>
         <p className="module__text">
           There are two syntaxes available for Sass:
@@ -142,8 +139,8 @@ const SassInstall = (props) => {
           </li> 
         </ul>
         <p className="module__text">
-          In this course you will see example code written primarily in SCSS 
-          due to its popularity in codebases.
+          In this course you will see example code in SCSS due to its popularity 
+          in codebases.
         </p>
       </div>    
 
